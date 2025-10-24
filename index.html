@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="logo-container">
+            <img src="/IMG/Logo Norman.png" alt="Logo Ferretería" class="logo">
+            <span class="company-name">Norrmeteria</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carrusel -->
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div class="carousel-slide">
+                <img src="/IMG/carrusel1.avif" alt="Imagen 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="/IMG/carrusel2.webp" alt="Imagen 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="/IMG/carrusel3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+    <script src="/javascript.js"></script>
+</body>
+</html>
